@@ -16,6 +16,8 @@ Use `ri [options] <whatever>` to look up information about Ruby classes, modules
 - Combine with `wc` to count relevant items when searching for multiple entries.
 - Combine with `grep` to filter results based on keywords.
 
+Consider to add quote to queries with special characters to avoid shell interpretation issues. e.g. `ri 'String#blank?'`
+
 ## Scenarios
 
 ### Direct Lookup
@@ -31,13 +33,13 @@ ri Array#push
 Check for methods is implemetned in a class or module and get a count of results.
 
 ```bash
-ri .find | wc -l
+ri '.find' | wc -l
 ```
 
 Use grep to filter results.
 
 ```bash
-ri .find | grep 'Enumerable'
+ri '.find' | grep 'Enumerable'
 ```
 
 > Note: Use `wc` and `grep` to ensure the output is concise and relevant.
@@ -47,7 +49,7 @@ ri .find | grep 'Enumerable'
 Get a list of all classes and modules under a specific namespace.
 
 ```bash
-ri --list MyModule::Application
+ri --list 'MyModule::Application'
 ```
 
 ### Preview Documentation
@@ -55,7 +57,7 @@ ri --list MyModule::Application
 Preview the first few lines of documentation for a method or class.
 
 ```bash
-ri String#upcase | head -n 10
+ri 'String#upcase' | head -n 10
 ```
 
 ### Explore Options
@@ -77,7 +79,7 @@ rdoc --format=ri --output=ri_doc .
 View the generated documentation using `ri`:
 
 ```bash
-ri -d ./ri_doc MyClass
+ri -d ./ri_doc 'MyClass'
 ```
 
 ## References
