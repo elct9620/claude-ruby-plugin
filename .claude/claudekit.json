@@ -1,0 +1,11 @@
+{
+  "rubric": {
+    "rules": [
+      {
+        "name": "Plugin README",
+        "pattern": "README\\.md$",
+        "path": "docs/rubrics/readme.md"
+      }
+    ]
+  }
+}

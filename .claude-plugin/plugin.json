@@ -1,0 +1,8 @@
+{
+  "name": "ruby",
+  "description": "Provides helpful Ruby extensions for varios scenarios.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Aotokitsuruya"
+  }
+}
