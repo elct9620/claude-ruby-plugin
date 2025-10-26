@@ -27,22 +27,12 @@ Add following config to your marketplace configuration file:
 
 ## Commands
 
-This plugin does not provide any commands.
-
-## Agents
-
-This plugin does not provide any agents.
+| Command | Description |
+|---------|-------------|
+| `/info <query>` | Look up Ruby documentation using the `ri` skill for classes, modules, and methods |
 
 ## Skills
 
 | Skill | Description |
 |-------|-------------|
 | `ruby:ri` | Access Ruby documentation using the `ri` command to look up classes, modules, and methods without checking source code |
-
-## Hooks
-
-This plugin does not provide any hooks.
-
-## Configuration
-
-This plugin does not require any configuration.
