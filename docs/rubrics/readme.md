@@ -18,6 +18,10 @@ Plugin Name
 
 > A brief description of what the plugin to do.
 
+## Installation
+
+> Instructions on how to install the plugin, fixed and no need to modify this section.
+
 ## Commands
 
 > A markdown table listing all commands provided by the plugin with brief descriptions.

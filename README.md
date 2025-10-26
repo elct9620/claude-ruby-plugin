@@ -5,6 +5,26 @@ Ruby Plugin
 
 Provides helpful Ruby extensions for various scenarios, enabling Claude Code to access Ruby documentation and development tools efficiently.
 
+## Installation
+
+Use [claudekit](https://github.com/elct9620/claudekit) marketplace which maintains by Aotokitsuruya.
+
+Add following config to your marketplace configuration file:
+
+```json
+{
+  "plugins": [
+    {
+      "name": "ruby",
+      "source": {
+        "source": "github",
+        "repo": "elct9620/claude-ruby-plugin"
+      }
+    }
+  ]
+}
+```
+
 ## Commands
 
 This plugin does not provide any commands.
