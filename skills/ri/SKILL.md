@@ -68,7 +68,23 @@ Explore various options available with the `ri` command.
 ri --help
 ```
 
-## Project Documentation
+## Documentation
+
+You can get README and other documentation if bundled with gems.
+
+```bash
+ri rspec:README.md
+```
+
+To list all available documentation files for a gem:
+
+```bash
+ri rspec:
+```
+
+Append the `:` after the gem name to see all documentation files associated with that gem.
+
+## Building Documentation
 
 You can use `rdoc` to generate and view documentation for your own Ruby projects.
 
